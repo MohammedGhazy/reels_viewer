@@ -112,12 +112,9 @@ class ScreenOptions extends StatelessWidget {
                   if (onShare != null)
                     InkWell(
                       onTap: () => onShare!(item.url),
-                      child: Transform(
-                        transform: Matrix4.rotationZ(5.8),
-                        child: const Icon(
-                          Icons.ios_share,
-                          color: Colors.white,
-                        ),
+                      child: const Icon(
+                        Icons.ios_share,
+                        color: Colors.white,
                       ),
                     ),
                   const SizedBox(height: 20),
