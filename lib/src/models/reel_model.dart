@@ -9,6 +9,5 @@ class ReelModel {
   final String? profileUrl;
   final String? reelDescription;
   final String? musicName;
-  final List<ReelCommentModel>? commentList;
-  ReelModel(this.url,this.userName,{this.id,this.isLiked =false,this.likeCount=0,this.profileUrl,this.reelDescription,this.musicName,this.commentList});
+  ReelModel(this.url,this.userName,{this.id,this.isLiked =false,this.likeCount=0,this.profileUrl,this.reelDescription,this.musicName});
 }
