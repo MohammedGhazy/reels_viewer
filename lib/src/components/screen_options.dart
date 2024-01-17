@@ -105,7 +105,10 @@ class ScreenOptions extends StatelessWidget {
                       onPressed: () => onLike!(item.url),
                     ),
                   if (item.isLiked)
-                    const Icon(Icons.favorite_rounded, color: Colors.red),
+                    IconButton(
+                      onPressed: () => onLike!(item.url),
+                      icon: Icon(Icons.favorite_rounded, color: Colors.red),
+                    ),
                   Text(NumbersToShort.convertNumToShort(item.likeCount),
                       style: const TextStyle(color: Colors.white)),
                   const SizedBox(height: 20),
